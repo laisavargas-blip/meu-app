@@ -36,3 +36,39 @@ export default function EventoItem() {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'column'
+  },
+  evento: {
+    flexDirection: 'column',
+    marginTop: 20,
+  },
+  reserva: {
+    flexDirection: 'row',
+    gap: 8,
+    marginTop: 20,
+  },
+  contador: {
+    flexDirection: 'row',
+    gap: 8,
+    alignItems: 'center'
+  },
+  imagem: {
+    width: 500,
+    height: 200,
+  },
+  titulo: {
+    fontSize: 28,
+  },
+  texto: {
+    fontSize: 18,
+  },
+  valor: {
+    fontSize: 18,
+  },
+  quantidade: {
+    fontSize: 16,
+  }
+});
