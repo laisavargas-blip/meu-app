@@ -19,7 +19,9 @@ export default function EventoItem() {
         <Image style={styles.imagem} source={{ uri: evento.imagem }} />
         <Text style={styles.titulo}>{evento.titulo}</Text>
         <Text style={styles.descricao}>{evento.descricao}</Text>
-        <Text style={styles.texto}>Quando: {evento.data}</Text>
+        <Text style={styles.texto}> air-vent
+airplay
+Quando: {evento.data}</Text>
         <Text style={styles.texto}>Valor: R$ {evento.valor}</Text>
       </View>
       <View style={styles.reserva}>
