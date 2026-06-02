@@ -58,6 +58,11 @@ const styles = StyleSheet.create({
     gap: 8,
     marginTop: 20,
   },
+  icone: {
+    flexDirection: 'row',
+    gap:8,
+    marginTop: 5
+  }
   contador: {
     flexDirection: 'row',
     gap: 8,
