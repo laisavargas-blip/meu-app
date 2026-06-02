@@ -10,6 +10,7 @@ export default function EventoItem() {
     descricao: 'A pesca da tainha será intensa no Pântano do Sul',
     data: '30/Maio',
     valor: 100,
+    local: 'floripa',
   };
 
   const [quantidade, setQuantidade] = useState(1);
@@ -22,14 +23,18 @@ export default function EventoItem() {
         <Text style={styles.descricao}>{evento.descricao}</Text>
         <View style={styles.icone}>
         <Calendar size={14} color='gray'/>
-        <Text style={styles.texto}>{evento.valor}</Text>
+        <Text style={styles.texto}>{evento.data}</Text>
         </View>
         <Text style={styles.texto}>Quando: {evento.data}</Text>
         <Text style={styles.texto}>Valor: R$ {evento.valor}</Text>
       </View>
       <View style={styles.icone}>
         <MapPin size={14} color='gray'/>
-        <Text style={styles.texto}>{evento.data}</Text>
+        <Text style={styles.texto}>{evento.local}</Text>
+        </View>
+        <View style={styles.icone}>
+        <Ticket size={14} color='gray'/>
+        <Text style={styles.texto}>{evento.valor}</Text>
         </View>
       <View style={styles.reserva}>
         <View style={styles.contador}>
