@@ -22,11 +22,15 @@ export default function EventoItem() {
         <Text style={styles.descricao}>{evento.descricao}</Text>
         <View style={styles.icone}>
         <Calendar size={14} color='gray'/>
-        <text style={styles.texto}>{evento.valor}</text>
+        <Text style={styles.texto}>{evento.valor}</Text>
         </View>
         <Text style={styles.texto}>Quando: {evento.data}</Text>
         <Text style={styles.texto}>Valor: R$ {evento.valor}</Text>
       </View>
+      <View style={styles.icone}>
+        <MapPin size={14} color='gray'/>
+        <Text style={styles.texto}>{evento.data}</Text>
+        </View>
       <View style={styles.reserva}>
         <View style={styles.contador}>
           <Button title="+" onPress={() => setQuantidade(quantidade + 1)} />
@@ -62,7 +66,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap:8,
     marginTop: 5
-  }
+  },
   contador: {
     flexDirection: 'row',
     gap: 8,
